@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    max-width: 900px;
+    height: 100vh;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+    /*******navigation bar ******************/
+    /****************************************/
+    nav{
+        background-color: rgb(175, 202, 238);
+        width:100%;
+        height:70px;
+        padding: 15px;
+        color: #fff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    nav h1{
+        font-size: 38px;
+    }
+
+    .cities{
+        font-size: 20px;
+        width:350px
+    }
+
+
+    ul{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    .cities li{
+        list-style: none;
+        text-decoration: none;
+        cursor: pointer;
+
+    }
+
+            /***************************************************/
+            /***************************************************/
+
+            /********************* main-content *****************/
+    main{
+        width:78%;
+        margin:10px auto;
+        height:400px;
+
+    }
+
+
+    main .main-title{
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
+
+   
+    hr{
+        border: 1.5px solid black;
+       
+    }
+
+    main .show-temp{
+        display: flex;
+        gap: 10px;
+    }
+    select{
+        border: 1px solid black;
+        width: 40px;
+        height: 20px;
+    }
+
+        /*********************************************************/
+        /********************* /* weekly-weather section  */
+
+        .weekly-weather{
+            margin: 10px ;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        /****************** days section ********************/
+    
+        .day{
+            padding: 10px;
+            background-color: rgb(204, 198, 198);
+            width:150px;
+            height: 250px;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .day img{
+            width:100px;
+            border-radius: 50%;
+        
+        }
+        .degree{
+            display: flex;
+            gap:50px;
+            align-items: center;
+        }
+        .max-temp{
+            color: red;
+        }
+        .min-temp{
+            color: blue;
+        }
+
+        .weather-case{
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+         /*******cookie section ******************/
+        /****************************************/
+
+        .cookie{
+            background-color: rgb(221, 220, 220);
+            position: fixed;
+            bottom: 5px;
+            left: 170px;
+            width: 73%;
+            padding: 10px;
+            border: 1px solid #090908;
+            display: flex;
+            flex-direction: column;
+            /* padding: 5px; */
+        }
+        .cookie-info{
+            display: flex;
+            padding:2px 20px;
+            justify-content: space-around;
+            align-items:center;
+            gap:20px;
+        }
+        .cookie-info img{
+           width:60px;
+           height:60px;
+           /* display: inline-block;
+           margin-bottom: 20px; */
+        }
+        .cookie-info a{
+            color: navy;
+        }
+
+        .cookie-info button{
+            width:150px;
+            height: 30px;
+            background-color: rgb(175, 202, 238) ;
+            border: 2px solid black;
+            box-shadow: 3px 3px 3px black;
+            cursor: pointer;
+        }
+
+        .cookie h3{
+            /* text-align: center; */
+            margin-left: 90px;
+            font-weight: bold;
+        }
+
+
+
+        
+        .hidden{
+            display: none;
+        }
+
+
+        .degree .circle-symbol-red{
+            display: inline-block;
+            /* background-color: pink; */
+            color: red;
+        }
+        .degree .circle-symbol-blue{
+            display: inline-block;
+            /* background-color: pink; */
+            color: blue;
+        }

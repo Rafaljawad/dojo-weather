@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojo weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <h1 class="logo">DojoWeather</h1>
+            <div class="cities">
+                <ul>
+                     <li class="city" onclick="alert('Loading')">Burbank</li>
+                    <li class="city" onclick="alert('Loading')">Chicago</li>
+                    <li class="city" onclick="alert('Loading')">Dallas</li>
+                </ul>
+            </div>
+        </nav>
+        <div class="cookie hidden">
+            <h3>stop! cookie time</h3>
+            <div class="cookie-info">
+                <img src="./assets/cookie.png" alt="cookie" class="cookie-img">
+                <p class="cookie-text">We use cookies(sadly not the edible once)to personalize content and ads, to provide social media features and to analyse our traffic. <a href="#">Read more..</a></p>
+                <button class="accept" onclick="removeCookie()">I Accept</button>
+            </div>
+        </div>
+
+
+        <main>
+            <div class="main-title">
+                <h3>San Joes</h3>
+                <div class="show-temp">
+                    <p class="show-temp-in">Show tempreture in</p>
+                    <select name="tempreture unit" id="tempreture-unit" onchange=" changeUnits()">
+                        <!-- <option value=""></option> -->
+                        <option value="celceuis">℃</option>
+                        <option value="fahranheite">℉</option>
+                    </select>
+                </div>
+            </div>
+            <hr>
+
+            <div class="weekly-weather">
+                <div class="day today">
+                    <div>Today</div>
+                    <div>
+                        <img src="./assets/some_rain.png" alt="rain image">
+                        <p class="weather-case">some rain</p>
+                    </div>
+                    <div class="degree">
+                       <div> <span class="max-temp">27</span><div class="circle-symbol-red">°</div></div>
+                       <div> <span class="min-temp">19</span><div class="circle-symbol-blue">°</div></div>
+                    </div>
+                </div>
+
+                <div class="day tomorrow">
+                    <div>Tomorrow</div>
+                    <div>
+                        <img src="./assets/some_sun.png" alt="sunny weather image">
+                        <p class="weather-case">some sun</p>
+                    </div>
+                    <div class="degree">
+                        <div> <span class="max-temp">24</span><div class="circle-symbol-red">°</div></div>
+                        <div> <span class="min-temp">18</span><div class="circle-symbol-blue">°</div></div>
+                    </div>
+                </div>
+
+                <div class="day friday">
+                    <div>Friday</div>
+                    <div>
+                        <img src="./assets/some_clouds.png" alt="cloudy weather image">
+                        <p class="weather-case">some cloud</p>
+                    </div>
+                    <div class="degree">
+                        <div> <span class="max-temp">21</span><div class="circle-symbol-red">°</div></div>
+                        <div> <span class="min-temp">16</span><div class="circle-symbol-blue">°</div></div>
+                    </div>
+                </div>
+
+
+                <div class="day saturday">
+                    <div>Saturday</div>
+                    <div>
+                        <img src="./assets/some_sun.png" alt="sunny weather image">
+                        <p class="weather-case">some sun</p>
+                    </div>
+                    <div class="degree">
+                        <div> <span class="max-temp">26</span><div class="circle-symbol-red">°</div></div>
+                       <div> <span class="min-temp">21</span><div class="circle-symbol-blue">°</div></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
